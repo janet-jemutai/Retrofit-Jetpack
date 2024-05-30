@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.material3.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,10 +68,33 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
-    implementation (libs.androidx.lifecycle.livedata.ktx)
+
+    // ViewModel and LiveData
+    implementation (libs.androidx.lifecycle.viewmodel.ktx.v251)
+    implementation (libs.androidx.lifecycle.livedata.ktx.v251)
+
+// Retrofit
     implementation (libs.retrofit)
+
+// Moshi
+    implementation (libs.moshi)
+    implementation (libs.moshi.kotlin)
     implementation (libs.converter.moshi)
-    implementation (libs.okhttp)
-    implementation (libs.androidx.lifecycle.livedata.ktx)
+
+// OkHttp and OkHttp Interceptor
+    implementation (libs.okhttp.v493)
+    implementation (libs.logging.interceptor)
+
+    // Jetpack Compose
+    implementation (libs.ui)
+    implementation (libs.androidx.runtime.livedata)
+
+
+
+//    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+//    implementation (libs.androidx.lifecycle.livedata.ktx)
+//    implementation (libs.retrofit)
+//    implementation (libs.converter.moshi)
+//    implementation (libs.okhttp)
+//    implementation (libs.androidx.lifecycle.livedata.ktx)
 }
