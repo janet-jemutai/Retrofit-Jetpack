@@ -1,5 +1,6 @@
 package com.jemutai.retrofit_jetpack
 
+import WizardData
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             RetrofitJetpackTheme {
 
-
+                WizardData(viewModel = MyViewModel())
             }
         }
     }

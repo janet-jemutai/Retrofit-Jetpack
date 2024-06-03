@@ -10,7 +10,7 @@ import retrofit2.create
 
 object RetrofitClient {
 
-    private  const val  BASE_URL ="https://wizard-world-api.herokuapp.com/"
+    private  const val  BASE_URL ="https://wizard-world-api.herokuapp.com"
     private  val  logging = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
     private  val okHttpClient = OkHttpClient.Builder().addInterceptor(logging).build()
     private  val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
